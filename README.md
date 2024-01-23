@@ -21,34 +21,24 @@ yarn
 yarn hardhat
 ```
 
-git checkout typescript
-
-```
-
 # Usage
 
 Deploy:
 
 ```
-
 npx hardhat run scripts/deploy.js
-
 ```
 
 ## Testing
 
 ```
-
 npx hardhat test
-
 ```
 
 ### Test Coverage
 
 ```
-
 npx hardhat coverage
-
 ```
 
 ## Estimate gas
@@ -56,9 +46,7 @@ npx hardhat coverage
 You can estimate how much gas things cost by running:
 
 ```
-
 npx hardhat test
-
 ```
 
 And you'll see and output file called `gas-report.txt`
@@ -68,17 +56,13 @@ And you'll see and output file called `gas-report.txt`
 If you'd like to run your own local hardhat network, you can run:
 
 ```
-
 npx hardhat node
-
 ```
 
 And then **in a different terminal**
 
 ```
-
 npx hardhat run scripts/deploy.js --network localhost
-
 ```
 
 And you should see transactions happen in your terminal that is running `npx hardhat node`
@@ -104,9 +88,7 @@ Head over to [faucets.chain.link](https://faucets.chain.link/) and get some tesn
 3. Deploy
 
 ```
-
 npx hardhat run scripts/deploy.js --network sepolia
-
 ```
 
 ### Verify on etherscan
@@ -118,9 +100,7 @@ In it's current state, if you have your api key set, it will auto verify sepolia
 However, you can manual verify with:
 
 ```
-
 npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
-
 ```
 
 # Linting
@@ -128,17 +108,11 @@ npx hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 To check linting / code formatting:
 
 ```
-
 yarn lint
-
 ```
 
 or, to fix:
 
 ```
-
 yarn lint:fix
-
-```
-
 ```
